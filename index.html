@@ -1,15 +1,193 @@
-            <br>
-           <a href="https://forms.gle/VhdcsmqY2jsczrHJ6" class="tlacitko" target="_blank">PŘIHLÁSIT SE</a>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Dance Cup 2026</title>
+    
+    <style>
+        /* --- DESIGN A BARVY --- */
+        :root {
+            --hlavni-modra: #1e3a8a;
+            --tmava-fialova: #4c1d95;
+            --svetla-fialova: #a78bfa;
+            --vesmirna-cerna: #0f172a;
+            --bila: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+        }
+
+        /* --- MENU --- */
+        nav {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            border-bottom: 1px solid var(--svetla-fialova);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- ÚVODNÍ SEKCE S PŘECHODEM A HVĚZDAMI --- */
+        .hero {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(180deg, var(--hlavni-modra) 0%, var(--tmava-fialova) 100%);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px);
+            background-size: 550px 550px, 350px 350px;
+            background-position: 0 0, 40px 60px;
+            opacity: 0.8;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-align: center;
+            margin: 0;
+            opacity: 0.9;
+            text-shadow: 0 0 20px rgba(167, 139, 250, 0.8), 0 0 40px rgba(30, 58, 138, 0.6);
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- SEKCE --- */
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: var(--tmava-fialova);
+            border-left: 5px solid var(--hlavni-modra);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        .karta {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid #e5e7eb;
+            margin-bottom: 20px;
+        }
+
+        .tlacitko {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--hlavni-modra), var(--tmava-fialova));
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(76, 29, 149, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .tlacitko:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: var(--vesmirna-cerna);
+            color: #94a3b8;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#uvod">Úvod</a>
+        <a href="#termin">Termín</a>
+        <a href="#propozice">Propozice</a>
+        <a href="#prihlaska">Přihláška</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <header id="uvod" class="hero">
+        <h1>DREAM<br>DANCE CUP</h1>
+    </header>
+
+    <section id="termin">
+        <div class="karta">
+            <h3>Důležitá data:</h3>
+            <ul>
+             <p> Spuštění přihlášek <strong> 1. června 2026 </strong> </p>
+          <p> Uzavření přihlášek: <strong> 10. října 2026</strong> </p>
+            <p>Datum soutěže: <strong>17. října 2026</strong></p>
+          <p>📍 Místo konání: <strong> ABC klub Pardubice </strong> </p>
+            </ul>
         </div>
     </section>
- 
+
+    <section id="propozice">
+        <div class="karta">
+            <h2>Propozice</h2>
+   <p>Soutěž je určena pro sóla, dua a malé skupinky v kategoriích <strong> Disco, Art a Hip Hop.</strong> </p>
+        <p>Detailní dokument s pravidly, věkovým rozdělením a startovným bude brzy k dispozici ke stažení.</p>
+            <p><em>(Zde můžete vložit odkaz na PDF soubor ke stažení)</em></p>
+        </div>
+    </section>
+
+    <section id="prihlaska">
+        <div class="karta" style="background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%); text-align: center;">
+            <h2>Přihlášky</h2>
+            <p>Chcete se zúčastnit? Přihlášky budeme přijímat přes online formulář</p>
+            <br>
+            <a href="#" class="tlacitko">PŘIHLÁSIT SE</a>
+        </div>
+    </section>
 
     <section id="kontakt">
         <h2>Kontakt</h2>
         <p><strong>Organizátor:</strong> Eliška Biathová </p>
-      <p>📧 <strong>Email:</strong> dreamdancecup.pardubice@gmail.com </p>
+        <p>📧 <strong>Email:</strong> dreamdancecup.pardubice@gmail.com </p>
         <p>📞 <strong>Tel:</strong> 734 219 589</p>
-      <p> 📞 <strong> Tel: </strong> 722 460 070 (Jana Doskočilová) </p>
+        <p>📞 <strong> Tel: </strong> 722 460 070 (Jana Doskočilová) </p>
     </section>
 
     <footer>
@@ -18,3 +196,5 @@
 
 </body>
 </html>
+
+
